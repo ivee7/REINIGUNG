@@ -1,0 +1,27 @@
+.info {
+    margin-top: 156px;
+}
+
+.info__title {
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 36px;
+    color: var(--blue);
+}
+
+.info__pre-text {
+    padding-top: 71px;
+    font-size: 45px;
+    font-weight: 500;
+    color: var(--dark-blue);
+}
+
+.info__text {
+    padding-top: 68px;
+    color: var(--dark-blue);
+    font-size: 30px;
+}
+
+.info__text-company {
+    color: var(--blue);
+}

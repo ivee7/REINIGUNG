@@ -1,0 +1,19 @@
+{
+  "parser": "@babel/eslint-parser",
+  "rules": {
+    "no-unused-vars": "warn",
+    "comma-dangle": "off",
+    "arrow-parens": "off",
+    "semi": "off",
+    "indent": "off",
+    "linebreak-style": "off",
+    "no-undef": "off",
+    "eol-last": "off",
+    "require-jsdoc": "off"
+  },
+  "env": {
+    "es6": true,
+    "browser": true
+  },
+  "extends": ["eslint:recommended", "google"]
+}

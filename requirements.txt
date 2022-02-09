@@ -1,0 +1,7 @@
+This Webpack configuration allows you to handle:
+-- babel
+-- sass/scss
+-- images and fonts
+-- production (minimized scripts, unique names) and development (unwrapped scripts, source maps, dev-server)
+-- performance analytics
+-- eslint

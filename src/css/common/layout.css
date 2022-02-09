@@ -1,0 +1,51 @@
+@import '../_variables.css';
+@import '../components/button-oval.css';
+@import '../components/button-oval-reverse.css';
+@import '../components/push-button.css';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+a {
+    outline: 0;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+    border: solid transparent;
+    outline: none;
+    background-color: transparent;
+    user-select: none;
+}
+
+input {
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+.layout {
+
+}
+
+.layout__header {
+    margin: 0 80px;
+}
+
+.layout__main {
+    margin: 0 80px;
+}
+
+.layout__footer {
+
+}

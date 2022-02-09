@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="images/favicon.ico" type="image/ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;400;500;600;700&display=swap" rel="stylesheet">
+    <title>REINIGUNG</title>
+</head>
+<body>
+    <div id='app' class='layout'>
+
+        <div class='layout__header'>
+            <header class='header'>
+                <div class='header__logo'>
+
+                </div>
+
+                <div class='header__menu'>
+                    <div class='header__nav-item'>
+                        <span class='header__nav-item-text'>Über uns</span>
+                    </div>
+                    <div class='header__nav-item'>
+                        <span class='header__nav-item-text'>Unsere Dienstleistungen</span>
+                    </div>
+                    <div class='header__nav-item'>
+                        <span class='header__nav-item-text'>Stellenangebot</span>
+                    </div>
+                    <div class='header__nav-item'>
+                        <span class='header__nav-item-text'>Kontakten</span>
+                    </div>
+                    <div class='header__nav-item-two'>
+                        <button class='button-oval'>
+                            <span class='button-oval__text header__nav-item-two-text'>+ 41 76 431 57 61</span>
+                        </button>
+                    </div>
+                    <div class='header__nav-item-two'>
+                        <div class='header__languages header__nav-item-two-text'>
+                            <div class='header__language header__language_actived'>
+                                <span class='header__language-text'>De</span>
+                            </div>
+                            <div class='header__languages-divider'></div>
+                            <div class='header__language'>
+                                <span class='header__language-text'>Fr</span>
+                            </div>
+                            <div class='header__languages-divider'></div>
+                            <div class='header__language'>
+                                <span class='header__language-text'>En</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </header>
+        </div>
+
+        <main class='layout__main'>
+            <div class='intro'>
+                <div class='intro__title'>
+                    Saubere Gedanken fangen
+                    <br/>
+                    mit<span class='intro__title-part'> sauberem Umfeld an</span>
+                </div>
+                <div class='intro__info'>
+                    <div class='intro__info-svg-wrapper'>
+                        <img
+                            src="<%= require('./static/images/intro/three-drops.svg') %>"
+                            alt='three-drops'
+                            width='44px'
+                            height='48px'
+                        >
+                    </div>
+                    <div class='intro__info-text'>
+                        führen Sie alle Arten von Reinigung
+                        <br/>
+                        in Ihrem Haus oder Büro durch
+                    </div>
+                </div>
+                <div class='intro__buttons'>
+                    <button class='button-oval-reverse into__button-bestellen'>
+                        <span class='button-oval-reverse__text intro__button-text'>Bestellen</span>
+                    </button>
+                    <button class='button-oval'>
+                        <span class='button-oval__text intro__button-text'>Erreichen</span>
+                    </button>
+                </div>
+                <div class='intro__mail'>
+                    <span class='intro__mail-text'>info@pavlova-reinigung.ch</span>
+                </div>
+                <div class='push-button intro__push-button'>
+                    <img
+                        class='push-button__arrow'
+                        src="<%= require('./static/images/intro/arrow.svg') %>"
+                        alt='arrow'
+                    >
+                </div>
+            </div>
+
+            <div class='info'>
+                <div class='info__title'>Über uns</div>
+                <div class='info__pre-text'>
+                    Eine große Sache <br/> für Kleinigkeiten
+                </div>
+                <div class='info__text'>
+                    <p>
+                        <span class='info__text-company'>Pavlova - Reinigugng</span> ist nicht nur ein weiteres
+                        <br />
+                        Reinigungsunternehmen, sondern Profis,
+                        <br />
+                        die ihre Kunden seit vielen Jahren begeistern.
+                        <br />
+                        Sie können uns die Reinigung aller Räume
+                        <br />
+                        anvertrauen und das Ergebnis in kürzester Zeit
+                        <br />
+                        genießen!
+                    </p>
+                </div>
+            </div>
+
+            <div class='slider'>
+                <div class='slider__title'>Unsere Dienstleistungen</div>
+                <div class='slider__title-two'>Arten der Reinigung</div>
+                <div class='slider__wrapper'>
+
+                </div>
+            </div>
+
+            <div class='employment'>
+                <div class='employment__text'>
+                    Schreib mir und erhalte
+                    <br/>
+                    <span class='employment__text-dreamjob'>einen Traumjob</span>
+                </div>
+                <div class='employment__button-wrapper'>
+                    <button class='button-oval employment__button'>
+                        <span class='button-oval__text employment__button-text'>Erreichen</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class='feedback'>
+                <div class='feedback__info'>
+                    <h3 class='feedback__title'>Kontakten</h3>
+                    <span class='feedback__question'>Noch Fragen?</span>
+                    <div class='feedback__text'>
+                        Füllen Sie das Formular aus <br/> und kontaktieren Sie uns direkt!
+                    </div>
+                </div>
+
+                <div class='feedback__arrow'>
+
+                </div>
+
+                <div class='feedback__card'>
+                    <div class='feedback__card-wrapper'>
+                        <div class='feedback__form-wrapper'>
+                            <div class='feedback__form'>
+
+                                <div class='feedback__form-svg-wrapper'>
+                                    <img
+                                        src="<%= require('./static/images/feedback/cleaning-tools.svg') %>"
+                                        alt='cleaning-tools'
+                                        width='95px'
+                                        height='91px'
+                                    >
+                                </div>
+
+                                <form class='form' action=''>
+                                    <div class='form__inputs-wrapper'>
+                                        <div class='form__input-wrapper form__name-input-wrapper'>
+                                            <input class='form__input' type='text' placeholder='Name'>
+                                        </div>
+                                        <div class='form__input-wrapper form__email-input-wrapper'>
+                                            <input class='form__input' type='text' placeholder='E-mail'>
+                                        </div>
+                                        <div class='form__input-wrapper form__message-input-wrapper'>
+                                            <input class='form__input' type='text' placeholder='Nachricht'>
+                                        </div>
+                                    </div>
+                                    <div class='form__button-wrapper'>
+                                        <button class='button-oval-reverse form__button'>
+                                            <span class='button-oval-reverse__text form__button-text'>Senden</span>
+                                        </button>
+                                    </div>
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </main>
+
+        <div class='layout__footer'>
+            <footer class='footer'>
+                <div class='footer__contacts'>
+                    <div class='footer__contact'>
+                        <div class='footer__contact-image'>
+                            <img
+                                src="<%= require('./static/images/footer/phone-call.svg') %>"
+                                alt='phone-number'
+                                width='75px'
+                                height='70px'
+                            >
+                        </div>
+                        <span class='footer__contact-text'>+ 41 76 431 57 61</span>
+                    </div>
+                    <div class='footer__contact'>
+                        <div class='footer__contact-image'>
+                            <img
+                                src="<%= require('./static/images/footer/gmail.svg') %>"
+                                alt='phone-number'
+                                width='75px'
+                                height='70px'
+                            >
+                        </div>
+                        <span class='footer__contact-text'>info@pavlova-reinigung.ch</span>
+                    </div>
+                    <div class='footer__contact'>
+                        <div class='footer__contact-image'>
+                            <img
+                                src="<%= require('./static/images/footer/placeholder.svg') %>"
+                                alt='phone-number'
+                                width='75px'
+                                height='70px'
+                            >
+                        </div>
+                        <span class='footer__contact-text'>Lorem Ipsum, Dolor, 10</span>
+                    </div>
+                </div>
+
+                <div class='footer__logo'>
+
+                </div>
+
+                <div class='footer__button-wrapper'>
+                    <button class='button-oval footer__button'>
+                        <span class='button-oval__text footer__button-text'>Erreichen</span>
+                    </button>
+                </div>
+                <div>
+
+                </div>
+            </footer>
+        </div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+@import './form.css';
+
+.feedback {
+    display: flex;
+    align-items: stretch;
+}
+
+.feedback__info {
+    display: flex;
+    flex-direction: column;
+}
+
+.feedback__title {
+    font-size: 50px;
+    line-height: 36px;
+    font-weight: 600;
+    color: var(--blue);
+}
+
+.feedback__question {
+    padding-top: 53px;
+    font-size: 45px;
+    font-weight: 500;
+    line-height: 62px;
+    color: var(--dark-blue);
+}
+
+.feedback__text {
+    padding-top: 71px;
+    font-size: 30px;
+    color: var(--dark-blue);
+}
+
+.feedback__arrow {
+    min-width: 560px;
+}
+
+.feedback__card {
+    margin: 252px 0 97px 0;
+    width: 488px;
+    max-height: 637px;
+    border-radius: 100px;
+    box-shadow: 4px 24px 60px rgba(109, 141, 173, 0.25);
+    background: #fff;
+}
+
+.feedback__card-wrapper {
+    position: relative;
+    width: 100%;
+    padding-bottom: 130%;
+}
+
+.feedback__form-wrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.feedback__form {
+    height: 100%;
+    padding: 37px 40px 49px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

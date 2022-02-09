@@ -1,0 +1,42 @@
+.footer {
+    height: 439px;
+    background-color: var(--light-blue);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__contacts {
+    margin-left: 80px;
+}
+
+.footer__contact {
+    display: flex;
+    align-items: center;
+}
+
+.footer__contact:not(:first-child) {
+    margin-top: 69px;
+}
+
+.footer__contact-text {
+    margin-left: 43px;
+    font-weight: 500;
+    font-size: 34px;
+    color: var(--dark-blue);
+}
+
+.footer__button-wrapper {
+
+}
+
+.footer__button {
+    width: 330px;
+    height: 88px;
+    border-width: 4px;
+}
+
+.footer__button-text {
+    font-size: 34px;
+    font-weight: 500;
+}

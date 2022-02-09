@@ -1,0 +1,20 @@
+.slider {
+    margin-top: 95px;
+}
+
+.slider__title {
+    font-size: 50px;
+    font-weight: 600;
+    color: var(--blue);
+}
+
+.slider__title-two {
+    font-size: 45px;
+    font-weight: 500;
+    color: var(--dark-blue);
+}
+
+.slider__wrapper {
+    height: 993px;
+    width: 100%;
+}
