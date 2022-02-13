@@ -19,6 +19,15 @@
     border-radius: 100px;
 }
 
+.form__input-wrapper_wrong {
+    border: 1px solid var(--dark-red);
+    box-shadow: 4px 4px 60px rgba(182, 0, 0, 0.25);
+}
+
+.form__input-wrapper_wrong .form__input::placeholder {
+    color: var(--dark-red);
+}
+
 .form__input {
     width: 100%;
     font-size: 24px;
@@ -45,21 +54,12 @@
     margin-top: 47px;
 }
 
-.form__button {
-    background-color: var(--blue);
-    box-shadow: inset -28px -28px 54px rgba(0, 0, 0, 0.24);
-    border: transparent;
-    border-radius: 60px;
-    transition: all .12s ease-out;
+.form__invalid {
+    padding: 0 23px;
 }
 
-.form__button:hover {
-    border: 2px solid var(--blue);
-    border-radius: 60px;
-    background: transparent;
-}
-
-.form__button-text {
-    font-size: 34px;
-    font-weight: 500;
+.form__invalid-text {
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--dark-red);
 }

@@ -18,9 +18,17 @@
 }
 
 .button-oval__text {
+    font-size: calc(18px + 16 * (100vw / 2000));
+    font-weight: 500;
     color: var(--dark-blue);
 }
 
 .button-oval:hover .button-oval__text {
     color: #fff;
+}
+
+@media (max-width: 767px) {
+    .button-oval__text {
+        font-size: calc(18px + (16 + 16 * 0.7) * ((100vw - 375px) - 2000));
+    }
 }

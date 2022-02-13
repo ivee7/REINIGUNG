@@ -1,0 +1,62 @@
+.intro-images__big-blue-circle-wrapper {
+    position: absolute;
+    top: -85%;
+    left: 12%;
+    z-index: 0;
+    width: 1363px;
+    height: 1305px;
+}
+
+.intro-images__big-blue-circle {
+    width: 100%;
+    height: 100%;
+}
+
+.intro-images__soap-bubble-big {
+    position: absolute;
+    top: 48%;
+    left: 81.5%;
+    z-index: 1;
+    width: 364px;
+    height: 385px;
+}
+
+.intro-images__soap-bubble-medium {
+    position: absolute;
+    top: 15%;
+    left: 57%;
+    z-index: 1;
+    width: 293px;
+    height: 289px;
+}
+
+.intro-images__soap-bubble-small {
+    position: absolute;
+    top: -14%;
+    left: 81%;
+    z-index: 1;
+    width: 276px;
+    height: 280px;
+}
+
+.intro-images__blue-puddle {
+    position: absolute;
+    top: 32.5%;
+    left: 5%;
+    z-index: 0;
+    width: 572px;
+    height: 485px;
+}
+
+.intro-images__push-button {
+    position: absolute;
+    top: 85%;
+    left: 33%;
+    z-index: 10;
+}
+
+.intro-images__woman {
+    position: absolute;
+    top: 20%;
+    left: 14%;
+}

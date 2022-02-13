@@ -4,7 +4,6 @@
     justify-content: space-between;
     align-items: center;
     height: 131px;
-    border: 1px solid black;
 }
 
 .header__logo {
@@ -15,12 +14,7 @@
     display: flex;
     align-items: center;
     height: 100%;
-    border: 1px solid yellow;
-    font-size: 24px;
-}
-
-.header__nav-item {
-    border: 1px solid green;
+    font-size: calc(16px + 8 * (100vw / 2000));
 }
 
 .header__nav-item:not(:first-child) {
@@ -41,8 +35,18 @@
     margin-left: 55px;
 }
 
+.header__button {
+    width: 257px;
+    height: 63px;
+    border: 2px solid var(--blue);
+    border-radius: 60px;
+    background: transparent;
+    text-align: center;
+}
+
 .header__nav-item-two-text {
-    font-size: 24px;
+    color: var(--dark-blue);
+    line-height: 63px;
 }
 
 .header__languages {

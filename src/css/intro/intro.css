@@ -1,63 +1,17 @@
+@import './intro-column.css';
+@import './intro-images.css';
+
 .intro {
     position: relative;
-}
-
-.intro__title {
-    margin-top: 113px;
-    font-size: 50px;
-    font-weight: 600;
-    line-height: 72px;
-    color: var(--dark-blue);
-}
-
-.intro__title-part {
-    color: var(--blue);
-}
-
-.intro__info {
-    margin-top: 71px;
     display: flex;
-    align-items: center;
+    padding-left: 80px;
 }
 
-.intro__info-svg-wrapper {
-    margin-right: 59px;
+.intro__column {
+    padding-top: 131px;
 }
 
-.intro__info-text {
-    font-size: 30px;
-    line-height: 43px;
-    color: var(--dark-blue);
-}
-
-.intro__buttons {
-    margin-top: 71px;
-    display: flex;
-    align-items: center;
-}
-
-.intro__button-text {
-    font-size: 34px;
-    line-height: 49px;
-    font-weight: 500;
-}
-
-.into__button-bestellen {
-    margin-right: 60px;
-}
-
-.intro__mail {
-    margin-top: 79px;
-    width: 65%;
-}
-
-.intro__mail-text {
-    font-size: 34px;
-    line-height: 25px;
-    font-weight: 500;
-    color: var(--dark-blue);
-}
-
-.intro__push-button {
-
+.intro__images {
+    position: relative;
+    width: 100%;
 }

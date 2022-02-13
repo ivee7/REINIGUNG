@@ -1,5 +1,7 @@
 .footer {
+    position: relative;
     height: 439px;
+    padding-right: 333px;
     background-color: var(--light-blue);
     display: flex;
     justify-content: space-between;
@@ -7,7 +9,7 @@
 }
 
 .footer__contacts {
-    margin-left: 80px;
+    padding-left: 80px;
 }
 
 .footer__contact {
@@ -22,12 +24,15 @@
 .footer__contact-text {
     margin-left: 43px;
     font-weight: 500;
-    font-size: 34px;
+    font-size: calc(10px + 24 * (100vw / 2000));
     color: var(--dark-blue);
+    white-space: nowrap;
 }
 
-.footer__button-wrapper {
-
+@media (max-width: 767px) {
+    .footer__contact-text {
+        font-size: calc(10px + (24 + 24 * 0.7) * ((100vw - 375px) / 2000));
+    }
 }
 
 .footer__button {
@@ -36,7 +41,9 @@
     border-width: 4px;
 }
 
-.footer__button-text {
-    font-size: 34px;
-    font-weight: 500;
+.footer__image {
+    position: absolute;
+    left: 91%;
+    width: 293px;
+    height: 287px;
 }

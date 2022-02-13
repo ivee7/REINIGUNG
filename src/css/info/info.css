@@ -1,17 +1,27 @@
 .info {
-    margin-top: 156px;
+    position: relative;
+    padding-top: 96px;
+    padding-left: 80px;
+    display: flex;
+}
+
+.info__column {
+    width: 31%;
+    white-space: nowrap;
 }
 
 .info__title {
-    font-size: 50px;
+    position: relative;
+    font-size: calc(24px + 26 * (100vw / 2000));
     font-weight: 600;
     line-height: 36px;
     color: var(--blue);
 }
 
 .info__pre-text {
+    position: relative;
     padding-top: 71px;
-    font-size: 45px;
+    font-size: calc(18px + 27 * (100vw / 2000));
     font-weight: 500;
     color: var(--dark-blue);
 }
@@ -19,9 +29,78 @@
 .info__text {
     padding-top: 68px;
     color: var(--dark-blue);
-    font-size: 30px;
+    font-size: calc(16px + 14 * (100vw / 2000));
+}
+
+@media (max-width: 767px) {
+
+    .info__title {
+        font-size: calc(24px + (26 + 26 * 0.7) * ((100vw - 375px) / 2000));
+    }
+
+    .info__pre-text {
+        font-size: calc(18px + (27 + 27 * 0.7) * ((100vw - 375px) / 2000));
+    }
+
+    .info__text {
+        font-size: calc(16px + (14 + 14 * 0.7) * ((100vw - 375px) / 2000));
+    }
 }
 
 .info__text-company {
     color: var(--blue);
+}
+
+/*//////////////////////////////////////////////////////*/
+
+.info__arrow {
+    position: relative;
+    width: 20%;
+    max-width: 383px;
+    display: flex;
+}
+
+.info__star-one {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.info__arrow-dashed-wrapper {
+    position: relative;
+    width: 100%;
+    height: 187px;
+}
+
+.info__arrow-dashed-inner {
+    position: absolute;
+    width: 100%;
+    padding-bottom: 49%;
+}
+
+/*/////////////////////////////////////////////////////////*/
+
+.info__button-wrapper {
+    width: 18%;
+    padding: 0 32px 0 69px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* /////////////////////////////////////////////////////// */
+
+.info__glove {
+    width: 31%;
+}
+
+.info__glove-aqua-wrapper {
+    position: relative;
+    max-width: 580px;
+    height: 394px;
+}
+
+.info__glove-aqua {
+    position: absolute;
+    width: 100%;
 }

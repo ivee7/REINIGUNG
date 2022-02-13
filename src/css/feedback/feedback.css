@@ -1,17 +1,19 @@
 @import './form.css';
 
 .feedback {
+    padding: 0 80px;
     display: flex;
     align-items: stretch;
 }
 
 .feedback__info {
+    position: relative;
     display: flex;
     flex-direction: column;
 }
 
 .feedback__title {
-    font-size: 50px;
+    font-size: calc(24px + 26 * (100vw / 2000));
     line-height: 36px;
     font-weight: 600;
     color: var(--blue);
@@ -19,7 +21,7 @@
 
 .feedback__question {
     padding-top: 53px;
-    font-size: 45px;
+    font-size: calc(18px + 27 * (100vw / 2000));
     font-weight: 500;
     line-height: 62px;
     color: var(--dark-blue);
@@ -27,12 +29,55 @@
 
 .feedback__text {
     padding-top: 71px;
-    font-size: 30px;
+    font-size: calc(16px + 14 * (100vw / 2000));
     color: var(--dark-blue);
+    white-space: nowrap;
+}
+
+@media (max-width: 767px) {
+    .feedback__title {
+        font-size: calc(24px + (26 + 26 * 0.7) * ((100vw - 375px) / 2000));
+    }
+
+    .feedback__question {
+        font-size: calc(18px + (27 + 27 * 0.7) * ((100vw - 375px) / 2000));
+    }
+
+    .feedback__text {
+        font-size: calc(16px + (14 + 14 * 0.7) * ((100vw - 375px) / 2000));
+    }
+}
+
+.feedback__star-one {
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translateX(-50%);
 }
 
 .feedback__arrow {
-    min-width: 560px;
+    width: 100%;
+    max-width: 560px;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.feedback__arrow-wrapper {
+    position: relative;
+    width: 100%;
+    height: 429px;
+}
+
+.feedback__arrow-inner {
+    position: absolute;
+    width: 100%;
+    padding-bottom: 86%;
+}
+
+.feedback__arrow-dashed-tip {
+
 }
 
 .feedback__card {
@@ -62,4 +107,16 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.feedback__star-two-wrapper {
+    flex: 1;
+    position: relative;
+}
+
+.feedback__star-two {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 21%;
 }

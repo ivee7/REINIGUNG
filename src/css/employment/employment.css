@@ -1,4 +1,5 @@
 .employment {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -6,7 +7,7 @@
 
 .employment__text {
     margin-top: 148px;
-    font-size: 45px;
+    font-size: calc(24px + 21 * (100vw / 2000));
     font-weight: 600;
     color: var(--dark-blue);
     text-align: center;
@@ -25,7 +26,26 @@
     height: 69px;
 }
 
-.employment__button-text {
-    font-size: 34px;
-    font-weight: 600;
+.employment__glove-blue {
+    position: absolute;
+    width: 611px;
+    height: 254px;
+    background-image: url('../../static/images/employment/glove-blue.png');
+    left: 0;
+    top: 13%;
+}
+
+.employment__glove-yellow {
+    position: absolute;
+    width: 715px;
+    height: 296px;
+    background-image: url('../../static/images/employment/glove-yellow.png');
+    right: 0;
+    top: 40%;
+}
+
+@media (max-width: 767px) {
+    .employment__text {
+        font-size: calc(24px + (21 + 21 * 0.7) * ((100vw - 375px) / 2000));
+    }
 }

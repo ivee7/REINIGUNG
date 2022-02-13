@@ -1,20 +1,108 @@
+@import './slide.css';
+
 .slider {
-    margin-top: 95px;
+    padding: 95px 80px 180px 80px;
 }
 
 .slider__title {
-    font-size: 50px;
+    font-size: calc(24px + 26 * (100vw / 2000));
     font-weight: 600;
     color: var(--blue);
 }
 
 .slider__title-two {
-    font-size: 45px;
+    padding-top: 71px;
+    font-size: calc(18px + 27 * (100vw / 2000));
     font-weight: 500;
     color: var(--dark-blue);
 }
 
 .slider__wrapper {
-    height: 993px;
+    position: relative;
+    padding-top: 45px;
+    height: 813px;
     width: 100%;
+}
+
+.slider__button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 5px solid var(--blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .12s ease-out;
+}
+
+.slider__button:active {
+    background-color: var(--blue);
+}
+
+.slider__button:active .slider__arrow > path {
+    fill: #fff;
+}
+
+.slider__button_left {
+    left: 0;
+}
+
+.slider__button_right {
+    right: 0;
+}
+
+.slider__arrow {
+    width: 42px;
+    height: 47px;
+}
+
+.slider__arrow-to-right {
+    transform: translateX(10%);
+}
+
+.slider__arrow-to-left {
+    transform: translateX(-10%);
+}
+
+.slider__dots {
+    width: 284px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slider__dot {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 4px solid #329afa;
+    transition: all .12s ease-out;
+}
+
+.slider__dot:hover {
+    background-color: rgba(48, 149, 242, 0.5);
+    border: none;
+}
+
+.slider__dot_active {
+    background-color: #3095F2;
+    border: none;
+    pointer-events: none;
+}
+
+@media (max-width: 767px) {
+    .slider__title {
+        font-size: calc(24px + (26 + 26 * 0.7) * ((100vw - 375px) / 2000));
+    }
+
+    .slider__title-two {
+        font-size: calc(18px + (27 + 27 * 0.7) * ((100vw - 375px) / 2000));
+    }
 }

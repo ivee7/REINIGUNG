@@ -1,6 +1,5 @@
 @import '../_variables.css';
 @import '../components/button-oval.css';
-@import '../components/button-oval-reverse.css';
 @import '../components/push-button.css';
 
 * {
@@ -20,6 +19,9 @@ a {
     text-decoration: none;
 }
 
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
 button {
     cursor: pointer;
     border: solid transparent;
@@ -34,18 +36,19 @@ input {
     background: transparent;
 }
 
-.layout {
-
-}
-
 .layout__header {
-    margin: 0 80px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    padding: 0 80px;
 }
 
 .layout__main {
-    margin: 0 80px;
+    overflow: hidden;
 }
 
 .layout__footer {
-
+    overflow: hidden;
 }
