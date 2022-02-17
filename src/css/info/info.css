@@ -57,13 +57,21 @@
     position: relative;
     width: 20%;
     max-width: 383px;
-    display: flex;
 }
 
 .info__star-one {
     position: absolute;
+    top: -17%;
     left: 50%;
     transform: translateX(-50%);
+}
+
+.info__arrow-dashed-outer {
+    position: absolute;
+    top: 45%;
+    left: 0;
+    right: 0;
+    padding-right: 32px;
 }
 
 .info__arrow-dashed-wrapper {
@@ -81,8 +89,7 @@
 /*/////////////////////////////////////////////////////////*/
 
 .info__button-wrapper {
-    width: 18%;
-    padding: 0 32px 0 69px;
+    width: 14%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -91,11 +98,23 @@
 /* /////////////////////////////////////////////////////// */
 
 .info__glove {
-    width: 31%;
+    position: relative;
+    width: 35%;
+}
+
+.info__glove-aqua-outer {
+    position: absolute;
+    top: 24%;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .info__glove-aqua-wrapper {
+    flex: 1;
     position: relative;
+    margin-left: 69px;
     max-width: 580px;
     height: 394px;
 }
@@ -103,4 +122,10 @@
 .info__glove-aqua {
     position: absolute;
     width: 100%;
+}
+
+.info__star-two {
+    position: absolute;
+    top: 10%;
+    right: -8%;
 }

@@ -2,7 +2,7 @@
   "name": "pavlova-reinigung",
   "version": "1.0.0",
   "description": "cleaning company",
-  "private":true,
+  "private": true,
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack --mode development",
     "build": "cross-env NODE_ENV=production webpack --mode production",
@@ -46,6 +46,7 @@
   },
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
-    "normalize.css": "^8.0.1"
+    "normalize.css": "^8.0.1",
+    "swiper": "^8.0.5"
   }
 }

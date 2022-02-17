@@ -1,7 +1,7 @@
 .intro-images__big-blue-circle-wrapper {
     position: absolute;
-    top: -85%;
-    left: 12%;
+    top: -79%;
+    left: 14%;
     z-index: 0;
     width: 1363px;
     height: 1305px;
@@ -15,10 +15,10 @@
 .intro-images__soap-bubble-big {
     position: absolute;
     top: 48%;
-    left: 81.5%;
+    left: 76%;
     z-index: 1;
-    width: 364px;
-    height: 385px;
+    width: 404px;
+    height: 425px;
 }
 
 .intro-images__soap-bubble-medium {
@@ -32,7 +32,7 @@
 
 .intro-images__soap-bubble-small {
     position: absolute;
-    top: -14%;
+    top: -13%;
     left: 81%;
     z-index: 1;
     width: 276px;
@@ -41,7 +41,7 @@
 
 .intro-images__blue-puddle {
     position: absolute;
-    top: 32.5%;
+    top: 27%;
     left: 5%;
     z-index: 0;
     width: 572px;
@@ -49,14 +49,16 @@
 }
 
 .intro-images__push-button {
+    display: block;
     position: absolute;
-    top: 85%;
+    top: 77%;
     left: 33%;
     z-index: 10;
+    border-radius: 50%;
 }
 
 .intro-images__woman {
     position: absolute;
-    top: 20%;
+    top: 15%;
     left: 14%;
 }

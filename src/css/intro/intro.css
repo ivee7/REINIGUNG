@@ -8,10 +8,11 @@
 }
 
 .intro__column {
+    width: 32%;
     padding-top: 131px;
 }
 
 .intro__images {
     position: relative;
-    width: 100%;
+    width: 68%;
 }

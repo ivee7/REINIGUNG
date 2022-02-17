@@ -1,7 +1,7 @@
 {
   "parser": "@babel/eslint-parser",
   "rules": {
-    "no-unused-vars": "warn",
+    "no-unused-vars": "off",
     "comma-dangle": "off",
     "arrow-parens": "off",
     "semi": "off",
@@ -9,7 +9,10 @@
     "linebreak-style": "off",
     "no-undef": "off",
     "eol-last": "off",
-    "require-jsdoc": "off"
+    "require-jsdoc": "off",
+    "prefer-const": "off",
+    "max-len": "off",
+    "no-useless-escape": "off"
   },
   "env": {
     "es6": true,

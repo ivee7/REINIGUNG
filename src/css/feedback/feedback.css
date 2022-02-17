@@ -83,7 +83,8 @@
 .feedback__card {
     margin: 252px 0 97px 0;
     width: 488px;
-    max-height: 637px;
+    max-height: 755px;
+    min-height: 600px;
     border-radius: 100px;
     box-shadow: 4px 24px 60px rgba(109, 141, 173, 0.25);
     background: #fff;
@@ -92,7 +93,7 @@
 .feedback__card-wrapper {
     position: relative;
     width: 100%;
-    padding-bottom: 130%;
+    padding-bottom: 155%;
 }
 
 .feedback__form-wrapper {
@@ -103,7 +104,7 @@
 
 .feedback__form {
     height: 100%;
-    padding: 37px 40px 49px;
+    padding: 37px 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
