@@ -16,28 +16,49 @@
 
         <div class='layout__header'>
             <header class='header'>
-                <div class='header__logo'>
+                <div class='header__logo-wrapper'>
+                    <img
+                        class='header__logo'
+                        src="<%= require('./static/images/header/logo.svg') %>"
+                        alt='logo'
+                    >
+                </div>
 
+                <div class='header__big-blue-circle-wrapper'>
+                    <svg class='header__big-blue-circle' viewBox="0 0 1363 1305" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <ellipse cx="681.5" cy="652.5" rx="681.5" ry="652.5" fill="#DAEDFE"/>
+                    </svg>
                 </div>
 
                 <div class='header__menu'>
                     <div class='header__nav-item'>
-                        <span class='header__nav-item-text'>Über uns</span>
+                        <span>
+                            <a data-goto='.info__column' class='header__nav-item-text' href='#'>Über uns</a>
+                        </span>
                     </div>
                     <div class='header__nav-item'>
-                        <span class='header__nav-item-text'>Unsere Dienstleistungen</span>
+                        <span class='header__nav-item-text'>
+                            <a data-goto='.slider__title' class='header__nav-item-text' href='#'>Unsere Dienstleistungen</a>
+                        </span>
+                    </div>
+                    <div class='header__nav-item header__nav-item-traumjob'>
+                        <span class='header__nav-item-text'>
+                            <a data-goto='.employment' class='header__nav-item-text' href='#'>Traumjob</a>
+                        </span>
                     </div>
                     <div class='header__nav-item'>
-                        <span class='header__nav-item-text'>Kontakten</span>
+                        <span class='header__nav-item-text'>
+                            <a data-goto='.feedback' class='header__nav-item-text' href='#'>Kontakten</a>
+                        </span>
                     </div>
-                    <div class='header__nav-item-two'>
+                    <div class='header__nav-item-two header__nav-item-two-number'>
                         <div class='header__button'>
                             <span class='header__nav-item-two-text'>+ 41 76 431 57 61</span>
                         </div>
                     </div>
-                    <div class='header__nav-item-two'>
+                    <div class='header__nav-item-two header__nav-item-two-languages'>
                         <div class='header__languages'>
-                            <div class='header__language header__language_actived'>
+                            <div class='header__language'>
                                 <span class='header__language-text header__language_active'>De</span>
                             </div>
                             <div class='header__languages-divider'></div>
@@ -48,6 +69,33 @@
                             <div class='header__language'>
                                 <span class='header__language-text'>En</span>
                             </div>
+                        </div>
+                    </div>
+
+                    <div class='header__star'>
+                        <img
+                            src="<%= require('./static/images/info/star.svg') %>"
+                            alt='star'
+                        >
+                    </div>
+
+                    <div class='header__soap-bubble-medium'>
+                        <img
+                            src="<%= require('./static/images/intro/soap-bubble-medium.svg') %>"
+                            alt='three-drops'
+                            width='100%'
+                            height='100%'
+                        >
+                    </div>
+
+                </div>
+
+                <div class='header__button-wrapper'>
+                    <div class='burger-button'>
+                        <div class='burger-button__block'>
+                            <div class='burger-button__crossbar'></div>
+                            <div class='burger-button__crossbar'></div>
+                            <div class='burger-button__crossbar'></div>
                         </div>
                     </div>
                 </div>
@@ -67,10 +115,9 @@
                     <div class='intro-column__info'>
                         <div class='intro-column__info-svg-wrapper'>
                             <img
+                                class='intro-column__info-svg'
                                 src="<%= require('./static/images/intro/three-drops.svg') %>"
                                 alt='three-drops'
-                                width='44px'
-                                height='48px'
                             >
                         </div>
                         <div class='intro-column__info-text'>
@@ -80,9 +127,12 @@
                         </div>
                     </div>
                     <div class='intro-column__buttons'>
-                        <button class='button-oval'>
+                        <a 
+                            class='button-oval'
+                            href='mailto:pavlova-reinigung@gmail.com'
+                        >
                             <span class='button-oval__text'>Bestellen</span>
-                        </button>
+                        </a>
                     </div>
                     <div class='intro-column__mail'>
                         <span class='intro-column__mail-text'>info@pavlova-reinigung.ch</span>
@@ -141,6 +191,12 @@
                         src="<%= require('./static/images/intro/woman.png') %>"
                         alt='woman'
                     >
+                    <div class='intro-images__star-mobile'>
+                        <img
+                            src="<%= require('./static/images/info/star.svg') %>"
+                            alt='star'
+                        >  
+                    </div>
                 </div>
             </div>
 
@@ -156,7 +212,7 @@
                     </div>
                     <div class='info__text'>
                         <p>
-                            <span class='info__text-company'>Pavlova - Reinigugng</span> ist nicht nur ein weiteres
+                            <span class='info__text-company'>Pavlova - Reinigung</span> ist nicht nur ein weiteres
                             <br />
                             Reinigungsunternehmen, sondern Profis,
                             <br />
@@ -210,22 +266,39 @@
                             </div>
                         </div>
                     </div>
-
+                    
                     <img
                         class='info__star-two'
                         src="<%= require('./static/images/info/star.svg') %>"
                         alt='star'
+                    >   
+                </div>
+
+                <div class='info__glove-aqua-mobile'>
+                    <img
+                        src="<%= require('./static/images/info/glove-aqua.png') %>"
+                        alt='glove-aqua'
+                        width='100%'
+                        height='100%'
                     >
+                </div>
+
+                <div class='info__star-mobile'>
+                    <img
+                        src="<%= require('./static/images/info/star.svg') %>"
+                        alt='star'
+                    >  
                 </div>
 
             </div>
 
             <div class='slider'>
-                <img
-                    class='slider__star-one'
-                    src="<%= require('./static/images/info/star.svg') %>"
-                    alt='star'
-                >
+                <div class='slider__star-one'>
+                    <img
+                        src="<%= require('./static/images/info/star.svg') %>"
+                        alt='star'
+                    >
+                </div>
 
                 <div class='slider__blur-circle'>
                 </div>
@@ -289,7 +362,7 @@
                             <div class='slide swiper-slide'>
                                 <div class='slide__wrapper'>
                                     <div class='slide__content'>
-                                        <div class='slide__image-wrapper'>
+                                        <div class='slide__image-wrapper slide__image-vacuum-cleaner'>
                                             <img
                                                 src="<%= require('./static/images/slider/vacuum-cleaner.svg') %>"
                                                 alt='vacuum-cleaner'
@@ -378,6 +451,12 @@
                 </div>
                 <div class='employment__glove-yellow'>
                 </div>
+                <div class='employment__star'>
+                    <img
+                        src="<%= require('./static/images/info/star.svg') %>"
+                        alt='star'
+                    >
+                </div>
             </div>
 
             <div id='feedback' class='feedback'>
@@ -396,13 +475,14 @@
 
                 <div class='feedback__arrow'>
                     <div class='feedback__arrow-wrapper'>
-                        <div class='feedback__arrow-inner'></div>
-                        <img
-                            class='feedback__arrow-dashed-tip'
-                            src="<%= require('./static/images/feedback/arrow-dashed-tip.svg') %>"
-                            alt='arrow-dashed-tip'
-                            style="position: absolute; width: 100%; height: 100%;"
-                        />
+                        <div class='feedback__arrow-inner'>
+                            <img
+                                class='feedback__arrow-dashed-tip'
+                                src="<%= require('./static/images/feedback/arrow-dashed-tip.svg') %>"
+                                alt='arrow-dashed-tip'
+                                style="position: absolute; width: 100%; height: 100%;"
+                            />
+                        </div>
                     </div>
                 </div>
 
@@ -413,68 +493,21 @@
 
                                 <div class='feedback__form-svg-wrapper'>
                                     <img
+                                        class='feedback__form-svg'
                                         src="<%= require('./static/images/feedback/cleaning-tools.svg') %>"
                                         alt='cleaning-tools'
-                                        width='95px'
-                                        height='91px'
                                     >
                                 </div>
+                                
+                                <span class='feedback__form-text'>Мы всегда Вам рады!</span>
 
-                                <form class='form' id='form' action='#'>
-                                    <div class='form__loader-wrapper'>
-                                        <div class='preloader'><div></div><div></div><div></div><div></div></div>
-                                    </div>
-                                    <div class='form__inputs-wrapper'>
-                                        <div class='form__input-wrapper form__name-input-wrapper'>
-                                            <input 
-                                                class='form__input _req' 
-                                                type='text' 
-                                                placeholder='Name'
-                                                maxlength='50'
-                                            >
-                                        </div>
-                                        <div class='form__gap form__gap_name'>
-                                            <span class='form__blank-input-text'>
-                                                *Поле обязательно
-                                            </span>
-                                        </div>
-
-                                        <div class='form__input-wrapper form__email-input-wrapper'>
-                                            <input 
-                                                class='form__input _req form__email-input' 
-                                                type='text' 
-                                                placeholder='E-mail'
-                                                maxlength='50'
-                                            >
-                                        </div>
-                                        <div class='form__gap form__gap_email'>
-                                            <span class='form__blank-input-text'>
-                                                *Поле обязательно
-                                            </span>
-                                        </div>
-                                        
-                                        <label class='form__textarea-wrapper'>
-                                            <textarea
-                                                type='text'
-                                                class='form__textarea'
-                                                id='form-textarea'
-                                                placeholder='Nachricht'
-                                                maxlength='250'
-                                                minlength='2'
-                                            ></textarea>
-                                        </label>
-                                        <div class='form__gap form__gap_message'>
-                                            <span id='character-counter' class='form__character-counter'>
-                                                0 / 250
-                                            </span>
-                                        </div> 
-                                    </div>
-                                    <div class='form__button-wrapper'>
-                                        <button type='submit' class='button-oval'>
-                                            <span class='button-oval__text'>Senden</span>
-                                        </button>
-                                    </div>
-                                </form>
+                                <a 
+                                    class='button-oval'
+                                    href='mailto:pavlova-reinigung@gmail.com'
+                                >
+                                    <span class='button-oval__text'>Senden</span>
+                                </a>
+                                
 
                             </div>
                         </div>
@@ -489,6 +522,10 @@
                     >
                 </div>
 
+                <div class='feedback__blur-circle'>
+
+                </div>
+
             </div>
 
         </main>
@@ -499,10 +536,9 @@
                     <div class='footer__contact'>
                         <div class='footer__contact-image'>
                             <img
+                                class='footer__icon'
                                 src="<%= require('./static/images/footer/phone-call.svg') %>"
                                 alt='phone-number'
-                                width='75px'
-                                height='70px'
                             >
                         </div>
                         <span class='footer__contact-text'>+ 41 76 431 57 61</span>
@@ -510,10 +546,9 @@
                     <div class='footer__contact'>
                         <div class='footer__contact-image'>
                             <img
+                                class='footer__icon'
                                 src="<%= require('./static/images/footer/gmail.svg') %>"
                                 alt='phone-number'
-                                width='75px'
-                                height='70px'
                             >
                         </div>
                         <span class='footer__contact-text'>info@pavlova-reinigung.ch</span>
@@ -521,18 +556,21 @@
                     <div class='footer__contact'>
                         <div class='footer__contact-image'>
                             <img
+                                class='footer__icon'
                                 src="<%= require('./static/images/footer/placeholder.svg') %>"
                                 alt='phone-number'
-                                width='75px'
-                                height='70px'
                             >
                         </div>
                         <span class='footer__contact-text'>Lorem Ipsum, Dolor, 10</span>
                     </div>
                 </div>
 
-                <div class='footer__logo'>
-
+                <div class='footer__logo-wrapper'>
+                    <img
+                        class='footer__logo'
+                        src="<%= require('./static/images/header/logo.svg') %>"
+                        alt='logo'
+                    >
                 </div>
 
                 <div class='footer__button-wrapper'>

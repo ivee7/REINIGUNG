@@ -1,7 +1,7 @@
 @import '../_variables.css';
 @import '../components/button-oval.css';
 @import '../components/push-button.css';
-@import '../components/preloader.css';
+@import '../components/burger-button.css';
 
 * {
     margin: 0;
@@ -13,6 +13,10 @@
 html, body {
     height: 100%;
     scroll-behavior: smooth;
+}
+
+._lock {
+    overflow: hidden;
 }
 
 a {
@@ -44,7 +48,6 @@ input {
     top: 0;
     right: 0;
     z-index: 100;
-    padding: 0 80px;
 }
 
 .layout__main {
@@ -52,5 +55,12 @@ input {
 }
 
 .layout__footer {
-    overflow: hidden;
+    background-color: var(--light-blue);
+}
+
+@media (max-width: 768px) {
+    .layout__footer {
+        overflow: hidden;
+        background-color: #fff;
+    }
 }

@@ -15,12 +15,7 @@
 }
 
 .swiper {
-    height: 768px;
-    border: 1px solid red;
-}
-
-.swiper-wrapper {
-    width: 100%;
+    height: 788px;
 }
 
 .swiper-pagination-horizontal {
@@ -32,9 +27,12 @@
 .swiper-pagination-bullet {
     width: 30px !important;
     height: 30px !important;
-    margin: 0 97px !important;
     background-color: #fff !important;
     border: 5px solid #329afa;
+}
+
+.swiper-pagination-bullet:not(:first-child) {
+    margin-left: 93px !important;
 }
 
 .swiper-pagination-bullet:hover {
@@ -49,6 +47,7 @@
 
 .swiper-slide .slide__wrapper {
     filter: blur(4px);
+    user-select: none;
 }
 
 .swiper-slide .slide__button {
@@ -57,8 +56,87 @@
 
 .swiper-slide-active .slide__wrapper {
     filter: blur(0);
+    user-select: auto;
 }
 
 .swiper-slide-active .slide__button {
     pointer-events: all;
+}
+
+@media (max-width: 1850px) {
+    .swiper {
+        height: 688px;
+    }
+}
+
+@media (max-width: 1700px) {
+    .swiper-pagination-bullet:not(:first-child) {
+        margin-left: 73px !important;
+    }
+}
+
+@media (max-width: 1500px) {
+    .swiper {
+        height: 568px;
+    }
+
+    .swiper-pagination-bullet {
+        width: 25px !important;
+        height: 25px !important;
+    }
+
+    .swiper-pagination-bullet:not(:first-child) {
+        margin-left: 63px !important;
+    }
+}
+
+@media (max-width: 1300px) {
+    .swiper {
+        height: 490px;
+    }
+
+    .swiper-pagination-bullet {
+        width: 20px !important;
+        height: 20px !important;
+    }
+
+    .swiper-pagination-bullet:not(:first-child) {
+        margin-left: 43px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .swiper-pagination-bullet {
+        width: 15px !important;
+        height: 15px !important;
+        border: 1px solid #329afa;
+    }
+
+    .swiper-pagination-bullet:not(:first-child) {
+        margin-left: 49px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .swiper {
+        height: 365px;
+    }
+
+    .swiper-pagination-horizontal {
+        bottom: 0 !important;
+    }
+
+    .swiper-button-prev {
+        display: none !important;
+    }
+    
+    .swiper-button-next {
+        display: none !important;
+    }
+}
+
+@media (max-width: 300px) {
+    .swiper-pagination-bullet:not(:first-child) {
+        margin-left: 39px !important;
+    }
 }

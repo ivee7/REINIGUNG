@@ -7,6 +7,8 @@
 }
 
 .slider__star-one {
+    width: 129px;
+    height: 113px;
     position: absolute;
     top: 0;
     left: 60%;
@@ -22,14 +24,14 @@
 }
 
 .slider__title {
-    font-size: calc(24px + 26 * (100vw / 2000));
+    font-size: 50px;
     font-weight: 600;
     color: var(--blue);
 }
 
 .slider__title-two {
     padding-top: 71px;
-    font-size: calc(18px + 27 * (100vw / 2000));
+    font-size: 45px;
     font-weight: 500;
     color: var(--dark-blue);
 }
@@ -40,8 +42,8 @@
 }
 
 .slider__button {
-    width: 90px;
-    height: 90px;
+    width: 90px !important;
+    height: 90px !important;
     border-radius: 50%;
     border: 5px solid var(--blue);
     background-color: #fff;
@@ -70,12 +72,106 @@
     transform: translateX(10%);
 }
 
-@media (max-width: 767px) {
-    .slider__title {
-        font-size: calc(24px + (26 + 26 * 0.7) * ((100vw - 375px) / 2000));
+@media (min-width: 2000px) {
+    .slider {
+        margin: 0 auto;
+        max-width: 2000px;
+        overflow: hidden;
+    }
+}
+
+@media (max-width: 1700px) {
+    .slider__wrapper {
+        padding: 45px 70px 0 70px;
+    }
+    
+    .slider__button {
+        width: 70px !important;
+        height: 70px !important;
+    }
+
+    .slider__arrow {
+        width: 32px;
+        height: 36px;
     }
 
     .slider__title-two {
-        font-size: calc(18px + (27 + 27 * 0.7) * ((100vw - 375px) / 2000));
+        padding-top: 42px;
+    }
+}
+
+@media (max-width: 1500px) {
+    .slider {
+        padding: 95px 67px 180px 67px;
+    }
+
+    .slider__title {
+        font-size: 32px;
+    }
+    
+    .slider__title-two {
+        padding-top: 46px;
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 1300px) {
+    .slider {
+        padding: 95px 52px 180px 52px;
+    }
+
+    .slider__title {
+        font-size: 28px;
+    }
+    
+    .slider__title-two {
+        padding-top: 42px;
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 768px) {
+    .slider {
+        padding: 0 0 60px 0;
+    }
+
+    .slider__star-one {
+        position: absolute;
+        top: auto;
+        left: auto;
+        bottom: 0;
+        right: -25px;
+        width: 61px;
+        height: 56px;
+    }
+
+    .slider__blur-circle {
+        display:  none;
+    }
+
+    .slider__wrapper {
+        padding: 51px 0 0 0;
+    }
+
+    .slider__title {
+        padding: 0 21px;
+        font-size: 24px;
+    }
+
+    .slider__title-two {
+        padding: 23px 21px 0 21px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 300px) {
+    .slider__title {
+        padding: 0 11px;
+        font-size: 20px;
+    }
+
+    .slider__title-two {
+        padding: 23px 11px 0 11px;
+        font-size: 16px;
     }
 }

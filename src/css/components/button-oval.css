@@ -5,6 +5,10 @@
     border: 2px solid var(--blue);
     border-radius: 60px;
     transition: all .12s ease-out;
+    transition: width .5s, height .5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .button-oval:active {
@@ -18,17 +22,46 @@
 }
 
 .button-oval__text {
-    font-size: calc(18px + 16 * (100vw / 2000));
+    font-size: 34px;
     font-weight: 500;
     color: var(--dark-blue);
+    transition: font-size .5s;
 }
 
 .button-oval:hover .button-oval__text {
     color: #fff;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1500px) {
+    .button-oval {
+        width: 200px;
+        height: 49px;
+    }
+
     .button-oval__text {
-        font-size: calc(18px + (16 + 16 * 0.7) * ((100vw - 375px) - 2000));
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 1300px) {
+    .button-oval {
+        width: 150px;
+        height: 37px;
+    }
+
+    .button-oval__text {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 767px) {
+    .button-oval {
+        width: 136px;
+        height: 46px;
+    }
+
+    .button-oval__text {
+        font-size: 18px;
+        font-weight: 600;
     }
 }

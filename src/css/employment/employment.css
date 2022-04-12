@@ -3,11 +3,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .employment__text {
     margin-top: 148px;
-    font-size: calc(24px + 21 * (100vw / 2000));
+    font-size: 45px;
     font-weight: 600;
     color: var(--dark-blue);
     text-align: center;
@@ -31,6 +32,9 @@
     width: 611px;
     height: 254px;
     background-image: url('../../static/images/employment/glove-blue.png');
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
     left: 0;
     top: 13%;
 }
@@ -40,12 +44,125 @@
     width: 715px;
     height: 296px;
     background-image: url('../../static/images/employment/glove-yellow.png');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
     right: 0;
     top: 40%;
 }
 
-@media (max-width: 767px) {
+.employment__star {
+    display: none;
+}
+
+@media (min-width: 2000px) {
+    .employment {
+        margin: 0 auto;
+        max-width: 2000px;
+        overflow: hidden;
+    }
+}
+
+@media (max-width: 1700px) {
+    .employment__glove-blue {
+        width: 500px;
+        height: 208px;
+     }
+ 
+     .employment__glove-yellow {
+         width: 550px;
+         height: 228px;
+     }
+}
+
+@media (max-width: 1500px) {
     .employment__text {
-        font-size: calc(24px + (21 + 21 * 0.7) * ((100vw - 375px) / 2000));
+        font-size: 30px;
+    }
+
+    .employment__button {
+        width: 260px;
+        height: 54px;
+    }
+
+    .employment__glove-blue {
+        width: 470px;
+        height: 196px;
+     }
+ 
+     .employment__glove-yellow {
+         width: 470px;
+         height: 196px;
+     }
+}
+
+@media (max-width: 1300px) {
+    .employment__text {
+        font-size: 26px;
+    }
+
+    .employment__button {
+        width: 200px;
+        height: 41px;
+    }
+
+    .employment__glove-blue {
+       width: 350px;
+       height: 146px;
+    }
+
+    .employment__glove-yellow {
+        width: 350px;
+        height: 145px;
+    }
+}
+
+@media (max-width: 767px) {
+    .employment {
+        height: 408px;
+        padding: 10px 0 71px 0;
+    }
+
+    .employment__text {
+        margin-top: 0;
+        font-size: 24px;
+    }
+
+    .employment__button-wrapper {
+        margin: 15px 0 0;
+    }
+    
+    .employment__button {
+        width: 136px;
+        height: 46px;
+    }
+
+    .employment__glove-blue {
+        width: 150px;
+        height: 63px;
+        left: 0;
+        top: 0;
+    }
+    
+    .employment__glove-yellow {
+        width: 180px;
+        height: 75px;
+        right: 0;
+        top: 65%;
+    }
+
+    .employment__star {
+        display: block;
+        width: 61px;
+        height: 56px;
+        position: absolute;
+        left: 11%;
+        bottom: 71px;
+    }
+}
+
+@media (max-width: 300px) {
+    .employment__text {
+        font-size: 20px;
     }
 }

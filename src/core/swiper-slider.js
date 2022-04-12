@@ -12,9 +12,39 @@ const swiper = new Swiper('.swiper', {
         slideShadows: false,
     },
     loop: true,
-    spaceBetween: 142,
-    slidesPerView: 3,
-    speed: 500,
+    spaceBetween: 0,
+    slidesPerView: 1,
+    // autoHeight: true,
+    // loopFillGroupWithBlank: true,
+    // slidesPerGroup: 1,
+    // slidesOffsetBefore: 100,
+    // slidesOffsetAfter: 50,
+    // setWrapperSize: true,
+    breakpoints: {
+        1700: {
+            spaceBetween: 97,
+            slidesPerView: 3,
+        },
+        1500: {
+            spaceBetween: 60,
+            slidesPerView: 3,
+        },
+
+        1300: {
+            spaceBetween: 40,
+            slidesPerView: 3,
+        },
+
+        1024: {
+            spaceBetween: 10,
+            slidesPerView: 3,
+        },
+        320: {
+            spaceBetween: 0,
+            slidesPerView: 1,
+        }
+    },
+    speed: 400,
     initialSlide: 1,
     centeredSlides: true,
     grabCursor: true,
