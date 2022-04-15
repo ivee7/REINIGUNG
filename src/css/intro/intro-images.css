@@ -33,9 +33,18 @@
     50% {
         transform: translate3d(5px, -10px, 0);
     }
+    70% {
+        transform: translate3d(10px, 4px, 0);
+    }
     100% {
         transform: translate3d(0, 0, 0);
     }
+}
+
+.animated-bubble {
+    border-radius: 50%;
+    will-change: left, top;
+    transition: left 0.5s ease-out, top 0.5s ease-out;
 }
 
 .intro-images__soap-bubble-medium {
@@ -93,7 +102,7 @@
         width: 1150px;
         height: 1102px;
     }
-    
+
     .intro-images__soap-bubble-big {
         position: absolute;
         top: 48%;
@@ -102,7 +111,7 @@
         width: 350px;
         height: 369px;
     }
-    
+
     .intro-images__soap-bubble-medium {
         position: absolute;
         top: 20%;
@@ -111,7 +120,7 @@
         width: 250px;
         height: 248px;
     }
-    
+
     .intro-images__soap-bubble-small {
         position: absolute;
         top: -5%;
@@ -120,7 +129,7 @@
         width: 230px;
         height: 234px;
     }
-    
+
     .intro-images__blue-puddle {
         position: absolute;
         top: 32%;
@@ -156,7 +165,7 @@
         width: 1000px;
         height: 958px;
     }
-    
+
     .intro-images__soap-bubble-big {
         position: absolute;
         top: 48%;
@@ -165,7 +174,7 @@
         width: 300px;
         height: 316px;
     }
-    
+
     .intro-images__soap-bubble-medium {
         position: absolute;
         top: 20%;
@@ -174,7 +183,7 @@
         width: 210px;
         height: 208px;
     }
-    
+
     .intro-images__soap-bubble-small {
         position: absolute;
         top: -5%;
@@ -183,7 +192,7 @@
         width: 190px;
         height: 193px;
     }
-    
+
     .intro-images__blue-puddle {
         position: absolute;
         top: 32%;
@@ -219,7 +228,7 @@
         width: 800px;
         height: 766px;
     }
-    
+
     .intro-images__soap-bubble-big {
         position: absolute;
         top: 48%;
@@ -228,7 +237,7 @@
         width: 250px;
         height: 263px;
     }
-    
+
     .intro-images__soap-bubble-medium {
         position: absolute;
         top: 20%;
@@ -237,7 +246,7 @@
         width: 170px;
         height: 168px;
     }
-    
+
     .intro-images__soap-bubble-small {
         position: absolute;
         top: -5%;
@@ -246,7 +255,7 @@
         width: 150px;
         height: 152px;
     }
-    
+
     .intro-images__blue-puddle {
         position: absolute;
         top: 27%;

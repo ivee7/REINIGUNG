@@ -127,7 +127,7 @@
                         </div>
                     </div>
                     <div class='intro-column__buttons'>
-                        <a 
+                        <a
                             class='button-oval'
                             href='mailto:pavlova-reinigung@gmail.com'
                         >
@@ -139,36 +139,38 @@
                     </div>
                 </div>
 
-                <div class='intro__images intro-images'>
+                <div id="bubbleContaining" class='intro__images intro-images'>
                     <div class='intro-images__big-blue-circle-wrapper'>
                         <svg class='intro-images__big-blue-circle' viewBox="0 0 1363 1305" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <ellipse cx="681.5" cy="652.5" rx="681.5" ry="652.5" fill="#DAEDFE"/>
                         </svg>
                     </div>
-                    <div class='intro-images__soap-bubble-big'>
-                        <img
-                            src="<%= require('./static/images/intro/soap-bubble-big.svg') %>"
-                            alt='three-drops'
-                            width='100%'
-                            height='100%'
-                        >
-                    </div>
-                    <div class='intro-images__soap-bubble-medium'>
-                        <img
-                            src="<%= require('./static/images/intro/soap-bubble-medium.svg') %>"
-                            alt='three-drops'
-                            width='100%'
-                            height='100%'
-                        >
-                    </div>
-                    <div class='intro-images__soap-bubble-small'>
-                        <img
-                            src="<%= require('./static/images/intro/soap-bubble-small.svg') %>"
-                            alt='three-drops'
-                            width='100%'
-                            height='100%'
-                        >
-                    </div>
+
+                    <img
+                        src="<%= require('./static/images/intro/soap-bubble-big.svg') %>"
+                        alt='three-drops'
+                        width='100%'
+                        height='100%'
+                        id='animated-bubble-1'
+                        class='intro-images__soap-bubble-big animated-bubble'
+                    />
+                    <img
+                        src="<%= require('./static/images/intro/soap-bubble-medium.svg') %>"
+                        alt='three-drops'
+                        width='100%'
+                        height='100%'
+                        id='animated-bubble-2'
+                        class='intro-images__soap-bubble-medium animated-bubble'
+                    >
+                    <img
+                        src="<%= require('./static/images/intro/soap-bubble-small.svg') %>"
+                        alt='three-drops'
+                        width='100%'
+                        height='100%'
+                        id='animated-bubble-3'
+                        class='intro-images__soap-bubble-small animated-bubble'
+                    />
+
                     <div class='intro-images__blue-puddle'>
                         <img
                             src="<%= require('./static/images/intro/blue-puddle.svg') %>"
@@ -195,7 +197,7 @@
                         <img
                             src="<%= require('./static/images/info/star.svg') %>"
                             alt='star'
-                        >  
+                        >
                     </div>
                 </div>
             </div>
@@ -266,12 +268,12 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <img
                         class='info__star-two'
                         src="<%= require('./static/images/info/star.svg') %>"
                         alt='star'
-                    >   
+                    >
                 </div>
 
                 <div class='info__glove-aqua-mobile'>
@@ -287,7 +289,7 @@
                     <img
                         src="<%= require('./static/images/info/star.svg') %>"
                         alt='star'
-                    >  
+                    >
                 </div>
 
             </div>
@@ -305,16 +307,16 @@
 
                 <div class='slider__title'>Unsere Dienstleistungen</div>
                 <div class='slider__title-two'>Arten der Reinigung</div>
-                
+
                 <div class='slider__wrapper'>
 
                     <div class='slider__button swiper-button-prev'>
                         <svg class='slider__arrow slider__arrow-to-left' viewBox="0 0 41 37" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M40.5712 4.83438C41.7563 2.32422 39.1899 -0.310591 36.6494 0.807976L2.37873 
+                            <path d="M40.5712 4.83438C41.7563 2.32422 39.1899 -0.310591 36.6494 0.807976L2.37873
                             15.8973C-0.00940323 16.9488 -0.00940323 20.3371 2.37873 21.3886L36.6494 36.478C39.1899
                             37.5965 41.7563 34.9617 40.5712 32.4516L34.6568 19.9237C34.274 19.1128 34.274 18.1731
                             34.6568 17.3622L40.5712 4.83438Z" fill="#339DFF"/>
-                        </svg>   
+                        </svg>
                     </div>
 
                     <div class='slider__button swiper-button-next'>
@@ -339,11 +341,11 @@
                                                 height='100%'
                                             >
                                         </div>
-        
+
                                         <div class='slide__name'>
                                             <span class='slide__name-text'>Haushalt Reinigung</span>
                                         </div>
-        
+
                                         <div class='slide__text'>
                                             Reinigen Sie Ihr Haus, während
                                             <br />
@@ -351,7 +353,7 @@
                                             <br />
                                             arbeiten, Sie entspannen!
                                         </div>
-        
+
                                         <button class='button-oval slide__button'>
                                             <span class='button-oval__text'>Erreichen</span>
                                         </button>
@@ -370,11 +372,11 @@
                                                 height='100%'
                                             >
                                         </div>
-        
+
                                         <div class='slide__name'>
                                             <span class='slide__name-text'>Büro Reinigung</span>
                                         </div>
-        
+
                                         <div class='slide__text'>
                                             Wir kommen zu Ihnen ins Büro
                                             <br />
@@ -382,7 +384,7 @@
                                             <br />
                                             noch angenehmer zu arbeiten
                                         </div>
-        
+
                                         <button class='button-oval slide__button'>
                                             <span class='button-oval__text'>Erreichen</span>
                                         </button>
@@ -401,11 +403,11 @@
                                                 height='100%'
                                             >
                                         </div>
-        
+
                                         <div class='slide__name'>
                                             <span class='slide__name-text'>Fenster waschen</span>
                                         </div>
-        
+
                                         <div class='slide__text'>
                                             Bewundern Sie die Welt vor
                                             <br />
@@ -415,7 +417,7 @@
                                             <br />
                                             unseren Experten gewaschen
                                         </div>
-        
+
                                         <button class='button-oval slide__button'>
                                             <span class='button-oval__text'>Erreichen</span>
                                         </button>
@@ -426,7 +428,7 @@
                         </div>
 
                         <div class='swiper-pagination'>
-            
+
                         </div>
 
                     </div>
@@ -498,16 +500,16 @@
                                         alt='cleaning-tools'
                                     >
                                 </div>
-                                
+
                                 <span class='feedback__form-text'>Мы всегда Вам рады!</span>
 
-                                <a 
+                                <a
                                     class='button-oval'
                                     href='mailto:pavlova-reinigung@gmail.com'
                                 >
                                     <span class='button-oval__text'>Senden</span>
                                 </a>
-                                
+
 
                             </div>
                         </div>
