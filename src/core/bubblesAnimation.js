@@ -3,7 +3,7 @@ import {throttle} from 'lodash';
 
 const K = 0.4;
 
-const timers = {}; // going back to init position timers
+const timers = {};
 const initCoords = new Map();
 const bubbleContainer = d3.select('#bubbleContaining');
 const {left: parentLeft, top: parentTop} = bubbleContainer.node().getBoundingClientRect();
@@ -14,12 +14,11 @@ bubbleContainer
         const el = e.target;
         const {left, top, width, height} = el.getBoundingClientRect();
 
-        // saving initial coords
+
         if (!initCoords.has(el.id)) {
             initCoords.set(el.id, {left, top})
         }
 
-        // Current center coords (x1; y1)
         const x1 = left + width / 2;
         const y1 = top + height / 2;
 

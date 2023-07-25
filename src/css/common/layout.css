@@ -10,6 +10,11 @@
     font-family: 'Jost', sans-serif;
 }
 
+img,svg {
+    user-select: none;
+    pointer-events: none;
+}
+
 html, body {
     height: 100%;
     scroll-behavior: smooth;

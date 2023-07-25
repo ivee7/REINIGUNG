@@ -11,33 +11,57 @@
     height: 100%;
 }
 
-.intro-images__soap-bubble-big {
-    position: absolute;
-    top: 48%;
-    left: 76%;
-    z-index: 1;
-    width: 404px;
-    height: 425px;
-}
-
 @keyframes bubble {
     0% {
-        transform: translate3d(0, 0, 0);
+        transform: translate(0, 0);
     }
-    10% {
-        transform: translate3d(-2px, 2px, 0);
-    }
-    20% {
-        transform: translate3d(-5px, -5px, 0);
+    25% {
+        transform: translate(5px, 5px);
     }
     50% {
-        transform: translate3d(5px, -10px, 0);
+        transform: translate(-5px, 4px);
     }
-    70% {
-        transform: translate3d(10px, 4px, 0);
+    75% {
+        transform: translate(-4px, -3px);
     }
     100% {
-        transform: translate3d(0, 0, 0);
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes bubbleBig {
+    0% {
+        transform: translate(0, 0);
+    }
+    25% {
+        transform: translate(-5px, -5px);
+    }
+    50% {
+        transform: translate(2px, -3px);
+    }
+    75% {
+        transform: translate(5px, 4px);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes bubbleSmall {
+    0% {
+        transform: translate(0, 0);
+    }
+    25% {
+        transform: translate(-2px, -2px);
+    }
+    50% {
+        transform: translate(2px, -2px);
+    }
+    75% {
+        transform: translate(2px, 2px);
+    }
+    100% {
+        transform: translate(0, 0);
     }
 }
 
@@ -47,6 +71,17 @@
     transition: left 0.5s ease-out, top 0.5s ease-out;
 }
 
+.intro-images__soap-bubble-big {
+    position: absolute;
+    top: 48%;
+    left: 76%;
+    z-index: 1;
+    width: 404px;
+    height: 425px;
+    pointer-events: all;
+    animation: bubbleBig 8s infinite linear;
+}
+
 .intro-images__soap-bubble-medium {
     position: absolute;
     top: 15%;
@@ -54,7 +89,8 @@
     z-index: 1;
     width: 293px;
     height: 289px;
-    animation: bubble 5s infinite ease-in-out;
+    pointer-events: all;
+    animation: bubble 10s infinite ease-in-out;
 }
 
 .intro-images__soap-bubble-small {
@@ -64,6 +100,8 @@
     z-index: 1;
     width: 276px;
     height: 280px;
+    pointer-events: all;
+    animation: bubbleSmall 9s infinite ease-in;
 }
 
 .intro-images__blue-puddle {
